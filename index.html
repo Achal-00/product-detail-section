@@ -8,7 +8,59 @@
   </head>
 
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="loader-container">
+        <div class="loader"></div>
+      </div>
+      <div class="product-preview">
+        <div class="image-section">
+          <img
+            src="./assets/product-image-1.png"
+            alt="selected image"
+            class="main-img"
+          />
+          <div class="image-selector">
+            <img src="./assets/product-image-1.png" alt="image 1" />
+            <img src="./assets/product-image-2.png" alt="image 2" />
+            <img src="./assets/product-image-3.png" alt="image 3" />
+            <img src="./assets/product-image-4.png" alt="image 4" />
+          </div>
+        </div>
+        <div class="detail-section">
+          <div class="product-header">
+            <p></p>
+            <h2></h2>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <h1><span></span> &nbsp;<span></span></h1>
+            <p></p>
+          </div>
+          <div class="line"></div>
+          <div class="color-section">
+            <p>Choose a Color</p>
+            <div class="color-selector"></div>
+          </div>
+          <div class="line"></div>
+          <div class="size-section">
+            <p>Choose a Size</p>
+            <div class="size-selector"></div>
+            <div class="button-section">
+              <div>
+                <button onclick="decrementCount()">-</button>
+                <p></p>
+                <button onclick="incrementCount()">+</button>
+              </div>
+              <button class="cart-button" onclick="addToCart()">
+                <img src="./assets/cart-icon.svg" alt="cart" /> Add to Cart
+              </button>
+              <span class="confirm-sec"></span>
+            </div>
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
   </body>
